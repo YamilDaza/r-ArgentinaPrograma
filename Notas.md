@@ -12,9 +12,11 @@
    3) Aprender a googlear
 
    *Introduccion a la programación*
-   - La programación en su deficion mas simple es decirle a una maquina que tiene que hacer. Y su aplicacion mas normal es para resolver un problema 
-   **-- La caracteristica mas importante de un programacion es entender cual es el problema, pensa en una solucion y luego recien escribir codigo que exprese esa solucion de una manera que la maquina lo entienda(lenguaje) --**
-   - Una técnica que podemos usar es el seudocodigo, es decir, expresar la solucion de una manera coloquil.
+   - La programación en su definicion mas simple es decirle a una maquina que tiene que hacer. Y su aplicacion mas normal es para resolver un problema 
+   **-- La caracteristica mas importante de un programador es entender cual es el problema, pensa en una solucion y luego recien escribir codigo que exprese esa solucion de una manera que la maquina lo entienda(lenguaje) --**
+   - Una técnica que podemos usar es el seudocodigo, es decir, expresar la solucion de una manera coloquial.
 
    *Como vamos a trabajar*
    - Unirse al grupo de slack
+
+   *Docker*

@@ -1,10 +1,10 @@
 # Machete de JavaScript
 
 ## JavaScript (o JS)
-Es una lengua de programación popular que se suele usar para crear efectos interactivos dentro de los navegadores web.
+Es una lenguaje de programación popular que se suele usar para crear efectos interactivos dentro de los navegadores web.
 
 ## variable
-Es un espacio para almacenamiento de valores, puede almacenar cualquier tipo de informacion (tipos de datos): numeros, palabras, conjuntos de datos, etc.
+Es un espacio de memoria para almacenamiento de valores, puede almacenar cualquier tipo de informacion (tipos de datos): numeros, palabras, conjuntos de datos, etc.
 
 ### undefined variable o variable no definida
 Es una variable que no tiene valor

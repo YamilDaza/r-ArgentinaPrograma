@@ -15,7 +15,7 @@
 // Este es un comentario de 1 sola línea. Simplemente agregar // a la izquierda de tu comentario.
 
 /*
-    ESte es un comentario multi-linea.
+    Este es un comentario multi-linea.
 
     Cuando estás escribiendo código que querés que la máquina ejecute, ponelos AFUERA de los bloques de comentario.
 */
@@ -38,7 +38,11 @@
         una vez que  se recargue index.html.
 */
 
+// console.log('Hello world, desde nivel1.js')
+// alert('Hello world')
+
 // Tarea: Ahora te toca a vos! Acá abajo escribí una alerta que diga "Hola mundo!"
+// alert('Hello world');
 
 
 // Tarea: Una vez que la alerta funcione, comentala poniendo '//' en la línea donde está el código y guardá los cambios.
@@ -46,7 +50,7 @@
 
 
 // Tarea: Ahora probá hacer un console.log de un mensaje que queramos.
-
+console.log('Aprendiendo JavaScript')
 
 // Consejo: Para recargar el navegador podemos apretar 'CMD + R' en Mac y 'CTRL + R' en
 //      Windows.
@@ -101,10 +105,12 @@
 */
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
-
+// Variables indefinicas:
+let numeroUno; 
+let numeroDos;
 
 /*
-    Podés usar el nombre de tus variables pare representar qué información tienen adentro, por ejemplo:
+    Podés usar el nombre de tus variables para representar qué información tienen adentro, por ejemplo:
 
     let saludo = 'Hola Mundo';
     alert(saludo);
@@ -114,7 +120,10 @@
 
 // Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropriado y
 // mostralas con un alert.
-
+let fullName = 'Yamil Daza';
+let age = 23;
+// alert('Hola, mi nombre es ' + fullName + ', y tengo ' + age + ' años')
+// alert(`Hello, my name is ${fullName} and have ${age} years`)
 
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
 
@@ -149,9 +158,13 @@
 */
 
 // TAREA: Crear una constante y mostrarla con un alert
+const cantidadMesesAnio = 12;
+// alert(`La cantidad de meses que tiene 1 año es ${cantidadMesesAnio}`)
 
 
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
+
+// cantidadMesesAnio = 14; Uncaught TypeErro: Assignment to constant variable
 
 
 // Consejo: No te olvides de comentar (//) los alerts y los errores intencionales (como en la tarea anterior) para
@@ -161,7 +174,7 @@
     Matemática - Operadores aritméticos (sumas, restas, multiplicación y división)
     ============================
 
-    Hay muchos 'operadores' diferentes en programación. Veamos los operadores aritéticos ahora.
+    Hay muchos 'operadores' diferentes en programación. Veamos los operadores aritméticos ahora.
     JavaScript incluye operadores estándares (+, -, /, *) que se pueden usar para hacer operaciones matemáticas.
 
     Ejemplo:
@@ -182,6 +195,11 @@
 // * 3ra variable llamada resultadoMultiplicacion que va a ser igual a
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
+
+let ten = 10;
+let three = 3;
+let multiplicationResult = ten * three;
+console.log(`The result of multiplication ${ten} for ${three} is: ${multiplicationResult}`)
 
 
 /*
@@ -228,8 +246,8 @@
 
     Consejo: Podemos aceptar múltiples argumentos (tambien llamados parámetros) separándolos con una coma ','.
 
-         function nombreFunction(argumento1, argumento2) {
-         }
+    function nombreFunction(argumento1, argumento2) {
+    }
 */
 
 // TAREA: Es tu turno de crear una función!
@@ -239,16 +257,56 @@
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
+function add(numberOne, numberTwo){
+    return numberOne + numberTwo;
+};
+
+console.log(add(5,3)); //1er forma
+
+const result = add(5,4); //2da forma, pasar el resultado a una variable
+console.log(result)
 
 // TAREA: Ahora creemos otra función llamada 'restar'
-//       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
+// Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
 
+function subtract(numberOne, numberTwo){
+    return numberOne - numberTwo;
+};
+
+console.log(subtract(10,7));
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
 
 // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
+
+/* let userName = prompt('Welcome, What is your full name?')
+let userBirthYear = prompt('what is your year of birth?');
+let currentYear = prompt('Year current?');
+
+let userAge = subtract(currentYear,userBirthYear)
+console.log(`Hello ${userName}, your age is ${userAge}`) */
+
+
+// HOMEWORK:
+/* 
+1) crear una función que tome como parámetro el año actual y el año de nacimiento
+y calcule la edad del usuario (más o menos).
+Preguntarle estos datos al usuario y guardarlos en 2 variables.
+Ejecutar la función con estos datos. Impriman el resultado en la consola
+*/
+
+
+/* 
+2) Preguntar el salario anual y calcular el salario mensual
+Preguntar el salario mensual y calcular el anual
+diario... semanal, por hora. etc. 
+*/
+
+
+
+
 
 /*
     Condicionales If-Else
@@ -271,7 +329,7 @@
 
     Necesitamos que la condición sea un Booleano, recordemos: TRUE o FALSE. Es decir, verdadero o falso.
 
-    Por ejemplo, si tenemos un número, lo podemos comprar con algo.
+    Por ejemplo, si tenemos un número, podemos comprar con algo.
 
     Ejemplo
 
