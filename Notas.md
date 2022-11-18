@@ -19,4 +19,14 @@
    *Como vamos a trabajar*
    - Unirse al grupo de slack
 
-   *Docker*
+   *Single Responsibility Principle. Princio de responsabilidad unica. Googlear*
+   - Entender y crear funciones de responsabilidad unica, tanto su codigo como su nombre tiene que ser equivalentes, no mas ni menos.
+
+   *Constantes*
+   - Asignar variables con la palabra reservada const, si estoy seguro que el valor de dicho valor No cambio DURANTE LA EJECUCIÓN
+
+   *Hoisting*
+   - JavaScript revisa todo nuestro archivo/codigo, y todas nuestras variables declaradas con var y nuestras funciones declaradas con function, las sube arriba como primer linea de codigo.
+
+   *SCOPE*
+   - Es la limitación o alcanze de una variable en javascript, puede ser alcanze global o de bloque.

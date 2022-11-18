@@ -314,7 +314,8 @@ diario... semanal, por hora. etc.
 
     Qué pasa si en nuestro programa queremos decidir sobre qué función debería ejecutarse? Tenemos que usar condicionales!
 
-    "Si (if) tenés una televisión, podés mirarla. Si no (else), hacés otra cosa."
+    "Si (if) tenés una televisión, podés mirarla. 
+    Si no (else), hacés otra cosa."
 
     Es lo mismo con el código. Le podés dar una condición 'if' a una máquina para que haga una decisión acerca de qué
     parte del código tiene que ejecutarse.
@@ -355,8 +356,8 @@ diario... semanal, por hora. etc.
     !== //Distinto que (dándole importancia al TIPO)
 
     Atención: No mezclar '=' y '==' ó '===' porque tienen distintos significados.
-         '=' significa "asignar". miVariable = 1
-         '===' significa preguntar si es "exactamente igual a". miVariable === 1 es verdadero si miVariable es 1, y falso si es cualquier otra cosa distinta de 1.
+        '=' significa "asignar". miVariable = 1
+        '===' significa preguntar si es "exactamente igual a". miVariable === 1 es verdadero si miVariable es 1, y falso si es cualquier otra cosa distinta de 1.
 
     También están los operadores '==' y '!=' que son muy similares a '===' y '!==' con una pequeña variación,
     que los hacen que sean más propensos a errores, así que siempre que sea posible vamos a usar '===' y '!=='.
@@ -418,8 +419,13 @@ diario... semanal, por hora. etc.
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
 
+function dividir(numero1, numero2){
+    return numero1 / numero2;
+};
 
-
+function multiplicar(numero1, numero2){
+    return numero1 * numero2;
+};
 
 
 // TAREA: Reescribamos el if-else que teníamos y extendámolos, agregando:
@@ -427,9 +433,6 @@ diario... semanal, por hora. etc.
 //       'else if' el 'operador' es igual a '/' - llamar a la función 'dividir'.
 //       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
 //       else console.log - "Perdón, no conozco ese operador".
-
-
-
 
 
 /*

@@ -47,7 +47,7 @@ console.log('Tu salario diario es ' + calcularSalarioDiario(salarioAnual));
 /// SCOPE
 
 // Variable hoisting -> izar
-// console.log(hola); //Falla porque no está definida
+// console.log(hola); //Falla porque hola no está definida
 
 // console.log(mensaje); //No falla, pero muestra undefined... por qué?
 // var mensaje = 'Hola, mundo';
