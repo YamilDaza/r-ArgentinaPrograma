@@ -1,10 +1,3 @@
-// TAREA1: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
-
-
-// TAREA2: Usando un bucle 'while', decile a tu computadora que registre los números de
-//       diez a uno.
-
-
 // TAREA3: Ha llegado el momento de un ejercicio clásico: 'FizzBuzz'.
 // Cuenta del 1 al 50 e imprime los números:
 // * Si un número es múltiplo de tres, imprime 'Fizz'.
@@ -17,5 +10,21 @@
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
 
-// TAREA4:Calcular el promedio de todos los números en un array de números. (y ponerlo en una función)
-// ej.: calcularPromedio([10,5,4,2,8])
+//Tarea3:
+const finDelCiclo = 50;
+const MULTIPLO_TRES = 3;
+const MULTIPLO_CINCO = 5;
+
+for (let i = 1; i <= finDelCiclo; i++) {
+   let mensaje = '';
+
+   if(i % MULTIPLO_TRES === 0){
+      mensaje += 'Fizz';
+   }
+   if(i % MULTIPLO_CINCO === 0){
+      mensaje += 'Buzz'
+   }
+
+   console.log(mensaje || i);
+}
+

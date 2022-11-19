@@ -8,13 +8,13 @@
 // Si no, simplemente imprimir "Hola " + nombre!
 
 // Tarea 1:
-const nombreUsuario = prompt('Bienvenido, ¿Cuál es tu nombre?');
+const nombreUsuario = prompt('Bienvenido, ¿Cuál es tu nombre?').toUpperCase();
 const miNombre = 'Yamil';
 const miAmigo = 'Ariel';
 
 let mensajeAImprimir;
 
-if(nombreUsuario.toUpperCase() === miNombre.toUpperCase()){
+if(nombreUsuario === miNombre.toUpperCase()){
    mensajeAImprimir = `Hola, Tocayo! Yo también me llamo ${nombreUsuario}`;
 }else if(nombreUsuario.toUpperCase() === miAmigo.toUpperCase()){
    mensajeAImprimir = `Hola ${nombreUsuario}, te llamas igual que a mi compañero de facultad`;

@@ -19,7 +19,7 @@
     <script src="js/nivel1.js"></script>
 
     Así es como has estado ejecutando el archivo nivel1.js en un navegador. Ahora cambia
-     nivel1.js para apuntar a este archivo - nivel2.js.
+    nivel1.js para apuntar a este archivo - nivel2.js.
 
     ¡Ahora estás listo para comenzar!
 */
@@ -43,9 +43,8 @@
 //       cosas que te gustan.
 
 
-
-
-
+const comidasFavoritas = ['Hamburguesas','Saice','Pescado','Bife con papas'];
+// console.log(`Comidas que me gustan: ${comidasFavoritas}`);
 
 
 /*
@@ -65,7 +64,8 @@
 // imprimi utilizando console.log el resultado.
 
 
-
+// const cantidadComidasFavoritas = comidasFavoritas.length;
+// console.log(`La cantidad de comidas es: ${cantidadComidasFavoritas}`);
 
 
 
@@ -90,7 +90,8 @@
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
-
+/* const tercerComida = comidasFavoritas[3-1];
+console.log(`Tu tercer comida es: ${tercerComida}`) */
 
 
 
@@ -115,8 +116,10 @@
 // TAREA: Toma tu array de comidasFavoritas y reemplaza el primer valor
 // con cualquier otra cosa.
 
-
-
+/* 
+const primerComida = 'Milanesa Napolitana';
+comidasFavoritas[1-1] = primerComida;
+console.log(`Modificaciones en mis comidas: ${comidasFavoritas}`); */
 
 
 
@@ -147,13 +150,13 @@
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
 
-
+// comidasFavoritas.push('Hamburguesa');
 
 
 
 // TAREA: console.log todo el array para verificar.
 
-
+// console.log(comidasFavoritas)
 
 
 
@@ -181,8 +184,18 @@
 
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
+/* const lenguajesTop = ['C++','Java','Ruby','JavaScript','Go'];
+console.info('Array original:');
+console.log(lenguajesTop);
 
+lenguajesTop[1-1] = 'JavaScript';
+lenguajesTop[2-1] = 'Node';
+lenguajesTop[4-1] = 'ReactJS';
+lenguajesTop[5-1] = 'MySql';
 
+console.info('Array Modificado:');
+console.log(lenguajesTop);
+ */
 
 
 
@@ -236,9 +249,9 @@
     while (numero < 10) {
       // 'menos de 10' es una condición (punto final)
 
-      console.log('JavaScript es increíble!');
+        console.log('JavaScript es increíble!');
 
-      numero = numero + 1;
+        numero = numero + 1;
       // + 1 es un contador / tamaño del paso
     }
 */
@@ -246,9 +259,14 @@
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
+/* const array10Numeros = [];
+let contador = 1;
+while(contador <= 10){
+    array10Numeros.push(contador);
+    contador++;
+}
 
-
-
+console.log(array10Numeros); */
 
 
 /*
@@ -262,14 +280,20 @@
 
     let i;
     for (i = 0; i <= 5; i = i + 1) {  // (punto de partida; condicion; paso)
-      console.log('Hola!');
+        console.log('Hola!');
     }
 */
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
-
-
+/* let contador = 0;
+for (let i = 3; i < 22; i++) {
+    if(contador === 3){
+        console.log(i)
+        contador = 0;
+    }
+    contador ++
+}; */
 
 
 
@@ -297,7 +321,10 @@
 // TAREA: Probalo con tu comidasFavoritas array.
 
 
-
+for (let i = 0; i < comidasFavoritas.length; i++) {
+    const item = comidasFavoritas[i];
+    console.log(`A mi me gusta: ${item}`)
+}
 
 
 
@@ -334,7 +361,6 @@
 
 // NOTA: Es posible que desees utilizar el operador aritmético modulo (%):
 // Calcula el resto al dividir.
-//
 // 10% 3 = 1 - en 10 tenemos 3 * 3 + 1
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
