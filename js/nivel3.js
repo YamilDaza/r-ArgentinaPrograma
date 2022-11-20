@@ -17,7 +17,6 @@
     Hablemos un poco más de HTML, CSS y de como podemos interactuar con ellos
     en JavaScript.
 
-
     Hypertext Markup Language (HTML)
     --------------------------------
     Como te habrás dado cuenta, HTML está dividido en elementos que se ven algo así:
@@ -26,8 +25,8 @@
     <p></p>
     <img />
 
-    A estos elementos los llamamos "tags". Cada elemento de la página tiene un tag que abre y otro que
-    cierra. (NOTA: Algunos tags, como <img />, no necesitan ser
+    A estos elementos los llamamos "tags". Cada elemento de la página tiene un tag que abre y otro que cierra.
+    (NOTA: Algunos tags, como <img />, no necesitan ser
     cerrados con otro tag.)
 
     La etiqueta que engloba a todas las demás en un archivo HTML es <html>.
@@ -55,9 +54,9 @@
     visuales. Una declaración se ve así:
     
     [selector] {
-      nombre-de-estilo: valor;
-      nombre-de-estilo: valor;
-      nombre-de-estilo: valor;
+        nombre-de-estilo: valor;
+        nombre-de-estilo: valor;
+        nombre-de-estilo: valor;
     }
 
     Los selectores especifican sobre que elementos son aplicados los
@@ -67,20 +66,20 @@
     se ven algo así:
 
     body {
-      background-color: white;
+        background-color: white;
     }
 
     Los selectores pueden también referirse a los elementos mediante su atributo
     de "clase", como esto:
 
     .settings {
-      margin: 0;
+        margin: 0;
     }
 
     o por su ID, así:
 
     #logo {
-      text-align: center;
+        text-align: center;
     }
 
     La lista de las propiedades de CSS es muy grande, podés leer más acá:
@@ -113,11 +112,11 @@
 
     const nuestroTwitter = document.querySelector('.twitter');
 
-    // Podemos guardar elementos de la página en variables, al igual que como cualquier otro valor!
-    // De todas formas, fijate que un elemento de página es un objeto,
-    // el cual es un "tipo de referencia", así como los arrays (mirá el nivel 2).
-    // Eso quiere decir que se pueden cambiar los atributos y propiedades del elemento,
-    // pero no la variable en sí misma. Vas a ver esto en acción ahora mismo.
+    Podemos guardar elementos de la página en variables, al igual que como cualquier otro valor!
+    De todas formas, fijate que un elemento de página es un objeto,
+    el cual es un "tipo de referencia", así como los arrays (mirá el nivel 2).
+    Eso quiere decir que se pueden cambiar los atributos y propiedades del elemento,
+    pero no la variable en sí misma. Vas a ver esto en acción ahora mismo.
 */
 
 // TAREA: Ahora te toca a vos! — Obtené la etiqueta h1 de la página y guardala en una variable
@@ -126,7 +125,11 @@
 
 
 
-
+let nuestroTitulo = document.querySelector('h1');
+console.log(nuestroTitulo);
+console.log(nuestroTitulo.textContent);
+// nuestroTitulo = nuestroTitulo.textContent + 'Mundo';
+// console.log(nuestroTitulo);
 
 
 /*
@@ -146,15 +149,14 @@
 
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
-
-
-
+const mediaLinks = document.querySelectorAll('li');
+console.log(mediaLinks);
 
 
 // TAREA: Ahora utilizá console.log para ver la cantidad de 
 // elementos li que hay con mediaLinks.length
 
-
+console.log(`Cantidad de Li es ${mediaLinks.length}`);
 
 
 
@@ -162,7 +164,9 @@
 // TAREA: ¿Te acordás de los bucles del nivel 2? Usando lo que sabés de ellos, realizá iteraciones
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
-
+for (let li = 0; li < mediaLinks.length; li++) {
+    console.log(mediaLinks[li].innerText);   
+}
 
 
 
@@ -206,7 +210,7 @@
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
 
 
-
+nuestroTitulo.textContent = 'R/ArgentinaPrograma';
 
 
 /*
@@ -223,7 +227,8 @@
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
 
-
+// const img = document.querySelector('img');
+// img.src = 'img/kittens.jpeg';
 
 
 
@@ -248,13 +253,33 @@
 
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
 
+/* 
+    Eventos + Extra
+    ==================
 
+    * .value -> propiedad especifica de los inputs
+    * Declarar nuestras variables que capturamos de HTML en JavaScript con $camelCase, es decir:
+    - const $variableHmtl = documento.querySelector(..); 
+
+    * Evento onclick -> es una propiedad que espera una funcion. Podriamos darle una function anonima.
+    - Ejemplo: 
+    const $boton = documento.querySelector('button');
+    $boton.onclick = function(){
+        //instrucciones a realizar
+        alert('Me diste click :D');
+    };
+
+    * Buscar sobre Eventos en el DOM, formulario con javascript e interactuar con el usuario. Tarea por realizar HOMEWORK
+    ! Empezar a interacturar con JavaScript, HTML, CSS.
+    ! Buscar información y realizar la tarea.
+
+*/
 
 
 
 
 /*
-   Creando nuevos nodos (Elementos)
+    Creando nuevos nodos (Elementos)
     =============================
 
     El objeto "document" también nos da maneras de crear nodos desde cero.

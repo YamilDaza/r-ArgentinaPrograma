@@ -30,3 +30,36 @@
 
    *SCOPE*
    - Es la limitación o alcanze de una variable en javascript, puede ser alcanze global o de bloque.
+
+   *Expresiones de function(funciones expresaas)*
+   - Es cuando declaramos una variable y le asignamos una funcion anonima, y dicha variable puede ejecutar la funcion que tiene almacenada.
+   - let variableX = function(){hacer algo...}
+   - typeof variableX -> function
+   - variableX();
+
+   *Pasar la refencia de la funcion*
+   -Es cuando creamos una funcion que recibe otra funcion y argumentos sea 1 o mas, al momento de llamar a la funcion padre va a esperar recibir una funcion y al momento de hacerlo TENEMOS QUE HACERLO SIN PARENTESIS. Si lo pasamos con parentesis se estaria ejecutando dicha funcion en ese momento y despues el resultado esperado sera otro. Las funciones que se pasan por argumento pueden ser funciones declaradas o expresadas
+   - ejemplo:
+   // FUNCION DECLARADA
+   function sumar(n1,n2){return n1 + n2}
+
+   //FUNCION EXPRESADA
+   const restar = function(n1,n2){return n1 - n2}
+
+   function tareaOperador(funcionOperador, n1, n2){
+      console.log(functionOperador(n1,n2))
+   };
+
+   tareaOperador(sumar,1,2); 
+   tareaOperador(restar,4,2); 
+   - PRESTAR ATENCION AL MOMENTO DE PASARLE LA FUNCION COMO PARAMETRO, LE ESTAMOS PASANDO LA REFERENCIA A LA FUNCION.
+
+   *GIT Y GITHUB*
+   - Git: control de versiones, lo necesitamos para saber como crece nuestro proyecto, los cambios a realizar y las nuevas implementaciones.
+
+   *Ruta de trabajo:*
+   - Crea una nueva rama, trabajo en esa rama con los ejercicios a realizar, subo los commits a mi repositorio remoto, realizo un pull request, espero confirmacion para hacer el merge pull request.
+
+
+
+
