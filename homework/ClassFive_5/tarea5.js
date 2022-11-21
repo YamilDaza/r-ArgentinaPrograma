@@ -37,6 +37,10 @@ $botonIngreso.onclick = (event) => {
    
    $mostrarResultado.textContent = mensaje;
 
+   setTimeout(()=> {
+      $mostrarResultado.style.display = 'none';
+   },5000);
+   
    $formulario.reset();
 };
 
