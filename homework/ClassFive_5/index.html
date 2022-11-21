@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Bar</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="./img/FAVICON.png" type="image/x-icon">
+</head>
+<body>
+   <div class="contenedor">
+      <div class="izquierda">
+      </div>
+
+      <div class="derecha">
+         <div class="contenedor-derecha">
+            <h2 class="title">Bienvenido, ingresá tus datos</h2>
+            <form id="formulario">
+   
+               <label for="nombreYApellido">Nombre y Apellido</label>
+               <input type="text" name="nombreYApellido" id="nombreYApellido">
+         
+               <label for="edad">Edad</label>
+               <input type="number" name="edad" id="edad">
+         
+               <div>
+                  <label for="">¿Tienes DNI?:</label><br>
+                  <label for="siTengoDNI">Si</label>
+                  <input type="radio" name="dni" value="Si" id="siTengoDNI">
+                  <label for="noTengoDNI">No</label>
+                  <input type="radio" name="dni" value="No" id="noTengoDNI">
+               </div>
+         
+               <button type="reset" id="botonEnviar">Enviar</button>
+         
+            </form>
+
+            <div id="resultado" ></div>
+
+         </div>
+      </div>
+
+   </div>
+
+   <script src="tarea5.js"></script>
+</body>
+</html>
