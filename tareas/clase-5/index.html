@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clase 5</title>
+    <title>Clase 5 - JavaScript</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="contenedor">
 
+        <div class="contenedor-formulario-uno">
+            <h1>Calcular salario por mes</h1>
+            <form class="formulario" id="fomulario">
+                <label for="salario-anual">Ingresá tu salario anual:</label>
+                <input type="number" name="salario-anual" id="salario-anual" placeholder="$">
+
+                <label for="salario-mensual">Salario mensual:</label>
+                <input type="number" name="salario-mensual" id="salario-mensual" placeholder="$" disabled>
+    
+                <div>
+                    <button type="button" id="calcular-salario-mensual">Calcular salario</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor-formulario-dos">
+            <h1>Calcular salario por año</h1>
+            <form class="formulario" id="fomulario">
+                <label for="salario-mensual-dos">Ingresá tu salario mensual:</label>
+                <input type="number" name="salario-mensual" id="salario-mensual-dos" placeholder="$">
+
+                <label for="salario-anual-dos">Salario anual:</label>
+                <input type="number" name="salario-anual" id="salario-anual-dos" placeholder="$" disabled>
+                
+                <div>
+                    <button type="button" id="calcular-salario-anual">Calcular salario</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="tarea-clase-5.js"></script>
 </body>
 </html>
