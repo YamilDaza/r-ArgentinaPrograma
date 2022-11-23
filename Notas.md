@@ -61,5 +61,33 @@
    - Crea una nueva rama, trabajo en esa rama con los ejercicios a realizar, subo los commits a mi repositorio remoto, realizo un pull request, espero confirmacion para hacer el merge pull request.
 
 
+## Manipular HTML con JavaScript =========================================================================
+   * textContent -> Solo nos da el contenido de dicha etiqueta
+   * innerText -> Solo nos los elementos que estan visibles, renderizados en nuestra pagina.
+   * innerHTML -> Literalmente nos da todo el elemento HTML(etiquetas + texto).
+   
+   * Agregar Clase -> classList.add('NombreClase');
+   * Quitar Clase -> classList.remove('NombreClase');
+   * Agregar atributo -> .src     .value    ... etc;
+   
+   *Podemos crear nuevos nodos(elementos) de HTML pero en memoria, todavia no esta en la pagina*
+   * Crear -> const elementoDinamico = document.createElement('nombre-etiqueta'); <nombreEtiqueta></nombreEtiqueta>
+           -> const textoDinamico = document.createTextNode('texto'); Creamos un texto
+   * AppenChild -> Para pasar nuestro elementos creados dinamicamente en nuestra pagina HTML.
+
+   * Evento onclick -> es una propiedad que espera una funcion. Podriamos darle una function anonima.
+    - Ejemplo: 
+    const $boton = documento.querySelector('button');
+    $boton.onclick = function(){
+        //instrucciones a realizar
+        alert('Me diste click :D');
+    };
+
+
+
+
+
+
+
 
 
