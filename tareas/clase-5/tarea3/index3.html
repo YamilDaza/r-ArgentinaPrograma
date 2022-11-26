@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tarea3 | Clase 5</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+      <h1 class="titulo">JavaScript - Tarea 3</h1>
+      <h2 class="subtitulo">Calcular tiempo ⏰ de las clases intro/JavaScript</h2>
+
+      <div class="contenedor-formulario">
+
+         <form id="formulario-clases">
+            <div>
+               <label for="cantidad-clases" >Cantidad de clases</label>
+               <input type="number" name="cantidad-clases" id="cantidad-clases" required>
+            </div>
+            <div>
+               <button type="button" id="agregar-clases">Agregar clases</button>
+               <button type="button" id="borrar-clases">Borrar clases</button>
+            </div>
+         </form>
+   
+         <form class="formulario">
+            <div id="formulario-usuario">
+
+            </div>
+            <button type="button" id="calcular-tiempo-total">Calcular tiempo total</button>
+            <button type="reset" id="reestablecer-valores">Reestablecer valores</button>
+         </form>
+   
+         <div id="contenedor-resultado">
+            <strong id="tiempo-total"></strong>
+         </div>
+
+      </div>
+
+   </main>
+
+   <script src="app.js"></script>
+</body>
+</html>
