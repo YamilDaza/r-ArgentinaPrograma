@@ -1,0 +1,113 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+body{
+   background-color: #15262f;
+   background-color: rgb(251, 249, 246);
+   text-align: center;
+   color: #060f14;
+}
+
+header{
+   background-color: #15262f;
+   padding: 1rem;
+   color: rgb(251, 249, 246);
+   border-bottom-left-radius: 40%;
+   border-bottom-right-radius: 40%;
+}
+
+h1{
+   padding: 1rem;
+}
+
+.formulario{
+   margin: 2rem;
+}
+
+label{
+   font-size: 1.5rem;
+   margin-left: 1rem;
+}
+
+input{
+   margin-left: 1rem;
+   margin-right: 1rem;
+   border-radius: 15px;
+   border: 1px solid #15262f;
+   padding: 0.5rem;
+   font-size: 1rem;
+   width: 5rem;
+   text-align: center;
+}
+
+.agregar-numero{
+   padding: 0.5rem;
+}
+
+button{
+   padding: 1rem;
+   border-radius: 15px;
+   font-size: 1rem;
+   background-color: #15262f;
+   color: rgb(251, 249, 246);
+   cursor: pointer;
+   transition: all 0.4s ease;
+}
+
+button:hover{
+   background: none;
+   color: #15262f;;
+}
+
+.contenedor-lista{
+   height: 50vh;
+   border: 2px solid #15262f;
+   width: 50%;
+   margin: 0 auto;
+   border-radius: 15px;
+}
+
+.contenedor-lista h2{
+   padding: 1rem;
+}
+
+.contenedor-lista div{
+   width: 100%;
+   height: 85%;
+   overflow:scroll;
+}
+
+.contenedor-lista li{
+   font-size: 2rem;
+   list-style-position: inside;
+}
+
+.contenedor-botones{
+   margin: 1rem;
+}
+
+.contenedor-botones button{
+   margin: 1rem;
+}
+
+.mensaje{
+   display: none;
+}
+
+.mensaje-visible{
+   display: block;
+   background-color: red;
+   width: fit-content;
+   padding: 0.5rem 1rem;
+   margin: 0 auto;
+   border-radius: 15px;
+   color:rgb(251, 249, 246);
+   margin-bottom: -1rem;
+}
+
