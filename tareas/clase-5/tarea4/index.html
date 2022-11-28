@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tarea 4 | JavaScript</title>
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+   <main>
+      <header>
+         <h1>R/Argentina Programa - <em>JavaScript</em></h1>
+         <h2>Clase 5 - Tarea 4</h2>
+      </header>
+
+      <div class="contenedor-formulario">
+         <form class="formulario" id="formulario">
+            <label for="numero-usuario">Introduce un numero para agregar a la lista</label>
+            <input type="number" name="numero" id="numero-usuario" required>
+            <button type="button" class="agregar-numero">Agregar numero</button>
+            <button class="agregar-numero" id="limpiar-lista">Limpiar lista</button>
+            <span class="mensaje">
+               Por favor ingresa un numero.
+            </span>
+         </form>
+      </div>
+
+      <div class="contenedor-lista">
+         <h2>Lista ordenada de numeros</h2>
+         <div>
+            <ol id="lista-numeros">
+            </ol>
+         </div>
+      </div>
+
+      <div class="contenedor-botones">
+         <button id="calcular-promedio">1-Calcular Promedio</button>
+         <button id="numero-mas-chico">2-Numero mas chico</button>
+         <button id="numero-mas-grande">3-Numero mas grande</button>
+         <button id="numero-repetido">4-Numero repetido</button>
+      </div>
+
+      <div class="resultado">
+         <ol class="resultado-lista">
+            <li>El promedio es: <em id="em1"></em></li>
+            <li>El numero mas chico es: <em id="em2"></em></li>
+            <li>El numero mas grande es: <em id="em3"></em></li>
+            <li>El numero repetido es <em id="em4"></em></li>
+         </ol>
+      </div>
+
+   </main>
+
+
+   <script src="app.js"></script>
+</body>
+</html>

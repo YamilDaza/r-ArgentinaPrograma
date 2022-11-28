@@ -63,7 +63,7 @@
 
 ## Manipular HTML con JavaScript =========================================================================
    * textContent -> Solo nos da el contenido de dicha etiqueta
-   * innerText -> Solo nos los elementos que estan visibles, renderizados en nuestra pagina.
+   * innerText -> Solo nos muestra los elementos que estan visibles, renderizados en nuestra pagina.
    * innerHTML -> Literalmente nos da todo el elemento HTML(etiquetas + texto).
    
    * Agregar Clase -> classList.add('NombreClase');
