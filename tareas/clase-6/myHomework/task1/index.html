@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task1 - Class 6</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <main class="contenedor-formulario">
+      <form class="formulario">
+         <label for="cantidad-integrantes">¿Cuántas personas tiene en su grupo familiar?</label>
+         <input type="number" id="cantidad-integrantes">
+         <button type="button" id="siguiente-paso">Siguiente</button>
+         <span id="mensaje-error">Debes ingresar un valor mayor a 0 !</span>
+
+         <div id="integrantes">
+            <!-- Inputs y labels creados dinamicamente con JS -->
+         </div>
+
+         <button type="button" id="calcular" class="ocultar">Calcular</button>
+
+         <div id="resultado" class="ocultar">
+            <p>La edad mayor es: <strong id="mayor-edad"></strong></p>
+            <p>La menor edad es: <strong id="menor-edad"></strong></p>
+            <p>El promedio de edad es: <strong id="promedio-edad"></strong></p>
+         </div>
+
+         <button type="reset" id="resetear">Empezar de nuevo</button>
+
+      </form>
+   </main>
+
+   <script src="app.js"></script>
+</body>
+</html>
