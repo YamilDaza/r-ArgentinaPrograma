@@ -5,6 +5,7 @@ Estos desafíos de coding están enfocados para los principiantes, por lo tanto 
 usando  elementos de programación simples y clásicos.
 */
 
+
 /*
 Desafío de programación #1: Imprimí los números del 1 al 10
 
@@ -38,6 +39,18 @@ Desafío de programación #5: Calcula el resultado de la suma de los numeros del
 [1,2,3,4,5,6,7,8,9,10]
 
  1 + 2 + 3 + ... + 10 = ? //hacerlo con un array y un bucle
+
+*/
+
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+let sumaTotal = 0;
+for (let i = 0; i < numeros.length; i++) {
+  sumaTotal = sumaTotal + numeros[i]
+}
+
+console.log(`La suma total del vector de numeros es: ${sumaTotal}`)
+
+/*
 
 Desafío de programación #6: Calcula 10! (10 factorial)
 
